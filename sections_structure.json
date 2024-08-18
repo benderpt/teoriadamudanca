@@ -99,18 +99,35 @@
             "Acompanhamento": "Esta resposta está incorreta. A TdM é mais útil se for concebida antes do acompanhamento para guiar as ações.",
             "Avaliação": "Esta resposta está incorreta. A TdM deve estar em vigor antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
         },
+        "image_path": "content/Assets/section6.png",
+        "button_answer": "Continuar"
+    },
+    {
+        "title": "Quando deve ser concebida a Teoria da Mudança",
+        "question": "Qual é o momento mais adequado para conceber a Teoria da Mudança?",
+        "options": [
+            "Sim",
+            "Não"
+        ],
+        "answer": "Sim",
+        "explanations": {
+        "Sim": "Sim, continua pelos seguintes motivos:\n\n1. Permite concluir se é expectável que as atividades em curso contribuam para a obtenção dos resultados propostos;\n2. Facilita os processos de avaliação, contribuindo para clarificar a lógica da intervenção (na qual se centrará a avaliação) e definir indicadores-chave;\n3. Permite um espaço de troca de ideias entre os stakeholders, assegurando que há um entendimento partilhado relativamente ao objetivo e à lógica da intervenção.",
+        "Não": "Idealmente, já devia ter sido construída antes da implementação, mas ainda pode ser útil em fases posteriores para realinhar a lógica da intervenção."
+        },
+        "image_path": "content/Assets/section6.png",
         "button_answer": "Continuar"
     },
     {
         "title": "Vantagens e desvantagens da Teoria da Mudança ⚖️",
-        "text": "Entre as vantagens da TdM estão a criação de um entendimento partilhado e a clareza na representação das expectativas e resultados. No entanto, pode haver desafios, como a dependência de métodos qualitativos e a simplificação da realidade.",
-        "image_path": "content/Assets/section4.png",
+        "text": "**Vantagens:**\n\n:green-background[Gerar um entendimento partilhado sobre a intervenção]\n\n:green-background[Permitir explicitar, de modo graficamente claro e intuitivo, a cadeia de acontecimentos e resultados que é esperada]\n\n:green-background[Compreensão rápida da lógica da intervenção]\n\n:green-background[Servir de base para a construção de um sistema de monitorização]\n\n:green-background[Servir para identificar elementos da intervenção sobre os quais há um maior desconhecimento prévio]\n\n**Desvantagens:**\n\n:red-background[Dependência de métodos qualitativos]\n\n:red-background[Simplificação da realidade]\n\n:red-background[Pode existir pouca disponibilidade para participar]\n\n:red-background[Não visar uma estimativa quantificada do impacto ou do custo-eficácia da intervenção.]",
+        "image_path": "content/Assets/section7.png",
         "button_text": "Continuar"
     },
     {
         "title": "Síntese 👩‍🎓",
-        "text": "Nesta sessão, explorámos a Teoria da Mudança, compreendendo a sua utilidade na representação gráfica das mudanças esperadas por uma intervenção. Também vimos que a TdM é fundamental na fase de planeamento e que suporta a monitorização e avaliação de políticas públicas.",
+        "text": ":green-background[Na sessão de microlearning sobre a Teoria da Mudança (TdM), foi abordada esta ferramenta metodológica que permite representar graficamente a complexidade das mudanças resultantes de uma intervenção em contextos específicos.]\n\n:green-background[A TdM ajuda a entender a relação causal entre as atividades realizadas e os resultados esperados, utilizando fundamentos e pressupostos claros.]\n\n:blue-background[A metodologia é útil para a formulação, monitorização e avaliação de políticas públicas, e deve ser idealmente desenvolvida na fase de planeamento da intervenção.]\n\n:blue-background[Entre as vantagens da TdM, destacam-se a criação de um entendimento partilhado e a clareza na representação das expectativas e resultados.]",
         "image_path": "content/Assets/endsection.png",
         "button_text": "Concluir"
     }
+    
 ]
