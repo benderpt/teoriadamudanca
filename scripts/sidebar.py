@@ -1,39 +1,40 @@
 # scripts/components.py
 import streamlit as st
 import os
-import json
-from streamlit_lottie import st_lottie
 
 def configure_sidebar():
-    """
-    Configures the sidebar of the Streamlit application.
-
-    This function sets up the sidebar with a logo, title, objectives, links, and a reset button.
-    It checks if the logo and icon files exist before displaying them.
-    """
+    """Configura a sidebar do Streamlit."""
     logo_path = "content/Assets/logos/logo.png"
     icon_path = "content/Assets/logos/logo.png"
     
-    # Check if the logo and icon files exist
+    # Verifica se os arquivos existem
     if os.path.exists(logo_path) and os.path.exists(icon_path):
         st.logo(logo_path, icon_image=icon_path)
     else:
-        st.error("Logo or icon not found.")
+        st.error("Logotipo ou ícone não encontrados.")
 
-    st.sidebar.title("What is data? 📊")
+    st.sidebar.title("Microlearning Teoria da mudança")
     st.sidebar.divider()
-    st.sidebar.subheader("Objectives 🎯")
-    st.sidebar.markdown("""
-    Understand concepts of data in the following dimensions:
-- Its definition and essential requisites
-- The transistor and the digital revolution
-- The exponential growth of digital data
-- The different types of digital data
+    st.sidebar.subheader("Objetivos 🎯")
+    st.sidebar.markdown("""Compreender a metodologia da teoria da mudança nas seguintes dimensões: \n
+    - O que é
+    - Para que serve
+    - A quem pode servir
+    - Em que fases pode ser útil
     """)
     st.sidebar.divider()
-    
-    # Display the "Restart" button only if not in the first section
-    if st.session_state.get('current_section', 0) > 0:
-        if st.sidebar.button("Restart"):
-            st.session_state.current_section = 0
-            st.rerun()
+
+    # Botão 1: Ver guia de avaliabilidade
+    if st.sidebar.button("📘 Ver guia de avaliabilidade", key="guia", use_container_width=True, type="primary", help="Clique para abrir o guia de avaliabilidade"):
+        st.sidebar.markdown("[Abra o guia](https://planapp.gov.pt/wp-content/uploads/2023/09/PlanAPP_2023_GuiaTdM.pdf)")
+
+    # Botão 2: Acompanhe o PlanAPP
+    if st.sidebar.button("🫶 Acompanhe o PlanAPP", key="planapp", use_container_width=True, type="primary", help="Acompanhar o PlanAPP nas redes que prefere"):
+        st.sidebar.markdown("[Siga o PlanAPP](https://linktr.ee/planapp)")
+
+    st.sidebar.divider()
+    # Botão para reiniciar
+    if st.sidebar.button("Voltar ao início"):
+        st.session_state.current_section = 0
+        st.rerun()
+

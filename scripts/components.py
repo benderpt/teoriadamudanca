@@ -1,4 +1,3 @@
-# scripts/components.py
 import streamlit as st
 import os
 import sys
@@ -8,9 +7,9 @@ from streamlit_lottie import st_lottie
 
 def render_single_choice_question(section):
     """
-    Renders a single-choice question and handles user responses.
+    Renderiza uma pergunta de escolha única e lida com as respostas dos usuários.
     
-    This function displays a single-choice question, processes user input, and provides feedback.
+    Esta função exibe uma pergunta de escolha única, processa a entrada do usuário e fornece feedback.
     """
     st.write(section["question"])
     options = section.get("options", [])
@@ -18,47 +17,49 @@ def render_single_choice_question(section):
     feedback_placeholder = st.empty()
 
     if not st.session_state.get("response_submitted", False):
-        selected_option = st.radio("Select an option", options)
+        selected_option = st.radio("Selecione uma opção", options)
 
         if selected_option:
-            if st.button(section.get("button_text", "Submit", type="primary")):
+            if st.button(section.get("button_text", "Responder"), type="primary"):
                 st.session_state.response_submitted = True
                 st.session_state.selected_option = selected_option
-                st.experimental_rerun()  # Force a rerun to update the state
+                st.experimental_rerun()  # Força uma nova execução para atualizar o estado
 
     if st.session_state.get("response_submitted", False):
         selected_option = st.session_state.get("selected_option", "")
-        explanation = section["explanations"]
+        explanation = section["explanations"].get(selected_option, "")
         correct = selected_option in section["answer"]
         if correct:
-            feedback_placeholder.success(f"{selected_option}: Correct! {explanation}")
+            feedback_placeholder.success(f"{selected_option}: Correto! {explanation}")
+            st.toast("🎉 Parabéns, você acertou!", icon="🔥")
         else:
-            feedback_placeholder.error(f"{selected_option}: Incorrect. {explanation}")
+            feedback_placeholder.error(f"{selected_option}: Incorreto. {explanation}")
 
-        # Add columns for buttons
+        # Adicionar colunas para botões
         col1, col2, col3 = st.columns(3)
         with col1:
-            if st.button(section.get("button_answer", "Continue", type="primary")):
+            if st.button(section.get("button_answer", "Continuar"), type="primary"):
                 st.session_state.current_section += 1
                 st.session_state.response_submitted = False
                 st.experimental_rerun()
         if not correct:
             with col2:
-                if st.button("Try again"):
+                if st.button("Tentar novamente"):
                     st.session_state.response_submitted = False
-                    st.experimental_rerun()  # Refresh the page
+                    st.experimental_rerun()  # Atualizar a página
         if st.session_state.current_section > 0:
             with col3:
-                if st.button("Go back"):
+                if st.button("Voltar"):
                     st.session_state.current_section -= 1
                     st.session_state.response_submitted = False
                     st.experimental_rerun()
 
+
 def render_multiple_choice_question(section):
     """
-    Renders a multiple-choice question and handles user responses.
+    Renderiza uma pergunta de múltipla escolha e lida com as respostas dos usuários.
     
-    This function displays a multiple-choice question, processes user input, and provides feedback.
+    Esta função exibe uma pergunta de múltipla escolha, processa a entrada do usuário e fornece feedback.
     """
     st.write(section["question_multiple"])
     options = section.get("options", [])
@@ -67,67 +68,69 @@ def render_multiple_choice_question(section):
 
     if not st.session_state.get("response_submitted", False):
         selected_options = st.multiselect(
-            "Select one or more options", options, placeholder="Select an option", key="multiselect"
+            "Selecione uma ou mais opções", options, placeholder="Selecione uma opção", key="multiselect"
         )
 
         if selected_options:
-            if st.button(section.get("button_text", "Submit"), type="primary"):
+            if st.button(section.get("button_text", "Responder"), type="primary"):
                 st.session_state.response_submitted = True
                 st.session_state.selected_options = selected_options
-                st.experimental_rerun()  # Force a rerun to update the state
+                st.experimental_rerun()  # Força uma nova execução para atualizar o estado
 
     if st.session_state.get("response_submitted", False):
         selected_options = st.session_state.get("selected_options", [])
-        correct_count = 0  # Correct answer counter
-        incorrect_count = 0  # Incorrect answer counter
+        correct_count = 0  # Contador de respostas corretas
+        incorrect_count = 0  # Contador de respostas incorretas
 
         for option in selected_options:
             explanation = section["explanations"].get(option, "")
             if option in section["answer"]:
                 st.success(f"{option}: {explanation}")
-                correct_count += 1  # Increment correct answer counter
+                correct_count += 1  # Incrementar contador de respostas corretas
             else:
                 st.error(f"{option}: {explanation}")
-                incorrect_count += 1  # Increment incorrect answer counter
+                incorrect_count += 1  # Incrementar contador de respostas incorretas
 
-        # Provide overall feedback
+        # Fornecer feedback geral
         all_correct = correct_count == len(section["answer"]) and incorrect_count == 0
         if all_correct:
-            feedback_placeholder.success("All answers are correct!")
+            feedback_placeholder.success("Todas as respostas estão corretas!")
+            st.toast("🎉 Parabéns, você acertou!", icon="🔥")
         elif correct_count > 0 and incorrect_count > 0:
-            feedback_placeholder.warning("Some answers are correct, but there are also incorrect answers.")
+            feedback_placeholder.warning("Algumas respostas estão corretas, mas também há respostas incorretas.")
         elif correct_count == 1 and incorrect_count == 0:
-            feedback_placeholder.warning("Correct answer, but still incomplete.")
+            feedback_placeholder.warning("Resposta correta, mas ainda incompleta.")
         elif correct_count > 1 and correct_count < len(section["answer"]) and incorrect_count == 0:
-            feedback_placeholder.warning("Correct answers, but incomplete.")
+            feedback_placeholder.warning("Respostas corretas, mas incompletas.")
         else:
-            feedback_placeholder.error("There are incorrect answers.")
+            feedback_placeholder.error("Há respostas incorretas.")
         
-        # Add columns for buttons
+        # Adicionar colunas para botões
         col1, col2, col3 = st.columns(3)
         with col1:
-            if st.button(section.get("button_answer", "Continue"), type="primary"):
+            if st.button(section.get("button_answer", "Continuar"), type="primary"):
                 st.session_state.current_section += 1
                 st.session_state.response_submitted = False
                 st.experimental_rerun()
         if not all_correct:
             with col2:
-                if st.button("Try again"):
+                if st.button("Tentar novamente"):
                     st.session_state.response_submitted = False
-                    st.experimental_rerun()  # Refresh the page
+                    st.experimental_rerun()  # Atualizar a página
         if st.session_state.current_section > 0:
             with col3:
-                if st.button("Go back"):
+                if st.button("Voltar"):
                     st.session_state.current_section -= 1
                     st.session_state.response_submitted = False
                     st.experimental_rerun()
 
+
+
 def render_question_content(section):
     """
-    Renders a question section and handles user responses based on question type.
+    Renderiza uma seção de perguntas e lida com as respostas dos usuários com base no tipo de pergunta.
 
-    This function delegates rendering and response handling to the appropriate
-    single-choice or multiple-choice question function based on the section content.
+    Esta função delega a renderização e o tratamento de respostas para a função de pergunta de escolha única ou múltipla apropriada com base no conteúdo da seção.
     """
     if "question_multiple" in section:
         render_multiple_choice_question(section)
@@ -136,9 +139,9 @@ def render_question_content(section):
 
 def render_static_content(section):
     """
-    Renders static content including title, image, and text.
+    Renderiza conteúdo estático, incluindo título, imagem e texto.
 
-    This function displays a title, an image if it exists, and formatted text from the provided section.
+    Esta função exibe um título, uma imagem se existir e texto formatado da seção fornecida.
     """
     if "title" in section:
         st.markdown(f"<h3 style='text-align: center;'>{section['title']}</h3>", unsafe_allow_html=True)
@@ -154,19 +157,19 @@ def render_static_content(section):
 
 def render_script_content(section):
     """
-    Executes a script if present in the section.
+    Executa um script se estiver presente na seção.
 
-    This function dynamically imports and runs a Python script specified in the section.
+    Esta função importa dinamicamente e executa um script Python especificado na seção.
     """
     if "script_path" in section:
         script_path = section["script_path"]
         script_dir, script_name = os.path.split(script_path)
         script_module_name = script_name.replace('.py', '')
 
-        # Add script directory to the system path
+        # Adicionar o diretório do script ao caminho do sistema
         sys.path.append(script_dir)
 
-        # Read and execute the script
+        # Ler e executar o script
         with open(script_path) as f:
             code = f.read()
             exec(code, globals())
@@ -176,9 +179,9 @@ def render_script_content(section):
 
 def render_navigation_buttons(section):
     """
-    Renders navigation buttons for moving between sections.
+    Renderiza botões de navegação para mover entre as seções.
 
-    This function displays buttons for continuing to the next section or going back to the previous section.
+    Esta função exibe botões para continuar para a próxima seção ou voltar à seção anterior.
     """
     if "button_text" in section:
         if st.session_state.current_section > 0:
@@ -189,7 +192,7 @@ def render_navigation_buttons(section):
                     st.session_state.current_section += 1
                     st.rerun()
             with col2:
-                if st.button("Go back"):
+                if st.button("voltar"):
                     st.session_state.current_section -= 1
                     st.rerun()
         else:
@@ -199,13 +202,13 @@ def render_navigation_buttons(section):
 
 def load_quiz_data(file_path):
     """
-    Loads quiz data from a JSON file.
+    Carrega dados do questionário a partir de um arquivo JSON.
 
     Args:
-        file_path (str): Path to the JSON file containing quiz data.
+        file_path (str): Caminho para o arquivo JSON contendo os dados do questionário.
 
     Returns:
-        dict: Parsed JSON data as a dictionary.
+        dict: Dados JSON analisados como um dicionário.
     """
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)

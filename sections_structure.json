@@ -1,69 +1,116 @@
 [
     {
-        "text": "Welcome to this microlearning session on data. Throughout the several sections, we will explore the fundamental concepts of data, its essential requisites, and its evolution from traditional to digital formats. We'll show the role of the transistor in the digitalization process, understand the exponential growth of digital data, and examine the various types of data that shape our modern world.",
-        "lottie": "content/Assets/section1.json",
+        "title": "Introdução à Teoria da Mudança 🎓",
+        "text": "Bem-vindo à sessão de microlearning sobre a Teoria da Mudança (TdM). Aqui, vamos explorar o que é esta ferramenta metodológica, para que serve e em que fases do ciclo de políticas pode ser útil.",
+        "image_path": "content/Assets/cover.png",
+        "button_text": "Começar a explorar a Teoria da Mudança"
+    },
+    {
+        "title": "O que é a Teoria da Mudança? 🧐",
         "image_path": "content/Assets/section1.png",
-        "button_text": "Start"
-    },
-    {
-        "title": "Definition of Data",
-        "text": "Data can be defined as a :blue-background[unit of information]. \nOk, but there's more to this simple definition. Think of data as the smallest social object, the basic building block used to create meaning. Data is social because it must already be encoded in a way that others can understand. For example, light itself is not data until it is measured and recorded.",
-        "image_path": "content/Assets/section2.png",
-        "button_text": "Continue"
-    },
-    {
-        "title": "What Requisites Must Data Have?",
-        "question_multiple": "Let's think for a while What are the key requisites that data must have?",
-        "image_path": "content/Assets/section3.png",
-        "explanations": {
-            "Value": "Data must have value, which represents its informational dimension. This means it must be encoded and decoded in a way that can be understood. Without this property, information cannot be communicated or interpreted effectively. In informational theory, value is what allows data to be usable and meaningful for further processing and analysis",
-            "Registry": "Data must have a material dimension, meaning it needs to be recorded and stored in some form, whether digitally or physically. There is no such thing as ethereal data; even data in transit is represented as a signal. This registry ensures that data exists in a tangible form that can be retrieved and analyzed.",
-            "Number": "Not all data needs to be numerical. While numbers can be data, other forms of data include text, images, and more.",
-            "Observation": "Data must have a connection to reality. This can be through direct observation or derivation from existing data. Without a connection to reality, data is merely a random unit with no meaningful context. Even synthetic data, which is artificially generated, must be based on patterns and insights derived from real observations."
-        },
+        "question": "Nesta sessão iremos abordar a ferramenta metodológica Teoria da mudança. Mas primeiro vamos tentar responder à pergunta, O que é a Teoria da Mudança (TdM)?",
         "options": [
-            "Value",
-            "Registry",
-            "Number",
-            "Observation"
+            "Uma ferramenta para medir a eficiência de um produto.",
+            "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
+            "Um método de previsão de resultados financeiros.",
+            "Um modelo de gestão de recursos humanos."
+        ],
+        "answer": "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
+        "explanations": {
+            "Uma ferramenta para medir a eficiência de um produto.": "Esta resposta está incorreta. A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças em um contexto específico.",
+            "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.": "A TdM é uma ferramenta que permite mapear visualmente a relação entre atividades e os resultados que se espera alcançar.",
+            "Um método de previsão de resultados financeiros.": "Esta resposta está incorreta. A TdM não se foca na previsão de resultados financeiros, mas sim na explicação de mudanças em um contexto de intervenção.",
+            "Um modelo de gestão de recursos humanos.": "Esta resposta está incorreta. A TdM não é um modelo de gestão, mas sim uma ferramenta para mapear mudanças causadas por uma intervenção."
+        },
+        "button_answer": "Continuar"
+    },
+    {
+        "title": "Elementos-chave da Teoria da Mudança 🔑",
+        "text": "A TdM é uma ferramenta que permite representar, de uma forma abrangente e gráfica, a complexidade e o “como” (a causalidade) das mudanças provocadas por uma determinada intervenção, em circunstâncias específicas. Uma TdM apresenta os “pequenos passos” que ocorrem entre o conjunto de atividades realizadas no âmbito de uma intervenção e os resultados esperados. Na Teoria da Mudança, a palavra “teoria” faz referência ao conjunto de fundamentos e pressupostos que determinam as atividades da intervenção.",
+        "image_path": "content/Assets/section2.png",
+        "button_text": "Continuar"
+    },
+    {
+        "title": "O que é a teoria na teoria da mudança",
+        "question": "Na Teoria da Mudança, a palavra 'teoria' faz referência a:",
+        "options": [
+            "O conjunto de fundamentos.",
+            "Os pressupostos que determinam as atividades da intervenção.",
+            "As atividades específicas realizadas na intervenção.",
+            "A relação entre as atividades e os resultados esperados."
         ],
         "answer": [
-            "Value",
-            "Registry",
-            "Observation"
+            "O conjunto de fundamentos.",
+            "Os pressupostos que determinam as atividades da intervenção."
         ],
-        "button_answer": "Continue"
-    },    
+        "explanations": {
+            "O conjunto de fundamentos.": "A 'teoria' na TdM refere-se aos fundamentos que sustentam as atividades da intervenção.",
+            "Os pressupostos que determinam as atividades da intervenção.": "A 'teoria' também inclui os pressupostos necessários para que as atividades levem aos resultados desejados.",
+            "As atividades específicas realizadas na intervenção.": "Embora as atividades sejam parte da TdM, a palavra 'teoria' refere-se mais aos fundamentos e pressupostos.",
+            "A relação entre as atividades e os resultados esperados.": "A relação entre atividades e resultados faz parte da TdM, mas 'teoria' refere-se aos fundamentos e pressupostos."
+        },
+        "image_path": "content/Assets/section3.png",
+        "button_answer": "Continuar"
+    },
     {
-        "title": "Dimensions of Data",
-        "text": ":blue-background[Data is a social process that starts with an observation], grounding it in reality through measurements or recordings. Without observation, data is just a random number, disconnected from any real-world context. :blue-background[It must then hold value, embodying its informational dimension by being encoded in a way that can be decoded and understood]. Without value, it becomes meaningless symbols, failing to convey any information. Finally, :blue-background[data requires a registry, giving it a material dimension through proper recording and storage]. Without a registry, it remains ephemeral and cannot be retrieved or analyzed.",
+        "title": "Para que serve a Teoria da Mudança? 🎯",
+        "text": "Idealmente, uma TdM explica como se espera que certa intervenção produza uma mudança. A TdM deve descrever os mecanismos que explicam a relação causal entre cada elemento (e por que razão um é necessário para atingir o outro) e os pressupostos, que são as condições externas que se devem cumprir para que a causalidade identificada seja válida. Se não foram obtidos os resultados esperados, a TdM permite olhar para todos os passos do processo e identificar os componentes que não foram implementados como previsto ou, eventualmente, concluir que não se validaram os mecanismos e pressupostos que sustentavam a lógica de causalidade da intervenção.",
         "image_path": "content/Assets/section4.png",
-        "button_text": "Continue"
+        "button_text": "Continuar"
     },
     {
-        "title": "Digital Data",
-        "question": "Data, much like language, has always been a fundamental way for humans to encode, store, and communicate information. Traditionally, data was recorded on physical mediums such as paper, stored in vast archives, and communicated through telegraphs and early telephone systems. These methods, while effective, had significant limitations in terms of storage capacity, retrieval speed, and susceptibility to damage. The invention of the transistor revolutionized this process, transforming data into digital data in a societal transformation known as digitalization. This shift allowed for data to be stored and processed electronically, vastly increasing efficiency, accuracy, and accessibility. Do you know what year was the first transistor invented?",
-        "image_path": "content/Assets/section5.jpg",
-        "explanations": "The invention of the first transistor was a groundbreaking achievement in the field of electronics, :blue-background[developed by John Bardeen, Walter Brattain, and William Shockley at Bell Labs]. This pivotal innovation marked the onset of the semiconductor age and laid the :blue-background[foundation for the era of digital data]. Transistors enabled the creation and processing of digital data, which is :blue-background[characterized by its ability to be read and interpreted by machines]. This machine-readable data transformed various aspects of society, ushering in a :blue-background[new age of productivity].",
+        "title": "A quem pode servir a teoria da mudança",
+        "question_multiple": "Esta metodologia analítica pode servir a quem no ciclo de políticas públicas?",
         "options": [
-            "1945",
-            "1946",
-            "1947",
-            "1948"
+            "A quem formula e desenha políticas",
+            "Aos responsáveis de monitorização das políticas",
+            "A quem discute o agendamento das políticas",
+            "A quem avalia as políticas",
+            "A quem as políticas são dirigidas"
         ],
-        "answer": "1947",
-        "button_answer": "Continue"
+        "answer": [
+            "A quem formula e desenha políticas",
+            "Aos responsáveis de monitorização das políticas",
+            "A quem avalia as políticas"
+        ],
+        "explanations": {
+            "A quem formula e desenha políticas": "A Teoria da Mudança pode apoiar aqueles que estão envolvidos na formulação e desenho de políticas públicas.",
+            "Aos responsáveis de monitorização das políticas": "A Teoria da Mudança é útil para monitorar a implementação e o impacto das políticas.",
+            "A quem avalia as políticas": "Esta ferramente é especialmente útil para aqueles que avaliam a eficácia e o impacto das políticas.",
+            "A quem as políticas são dirigidas": "As pessoas impactadas pelas políticas também podem se beneficiar da Teoria da Mudança ao compreenderem os pressupostos subjacentes.",
+            "A quem discute o agendamento das políticas": "Aqueles que participam da discussão sobre quais políticas devem ser priorizadas podem usar a Teoria da Mudança para fundamentar suas decisões."
+        },
+        "image_path": "content/Assets/section5.png",
+        "button_answer": "Continuar"
     },
     {
-        "title": "Data growth",
-        "explanations": "This graph illustrates the remarkable growth of digital data within our social systems from 2010 to 2025, measured in zetabytes. :blue-background[A zetabyte, equivalent to one trillion gigabytes], is an astronomical unit of data that underscores the immense scale at which information is being generated and stored. The exponential increase in data generation highlights the profound impact on social processes, driving advancements in technology, communication, and information processing. :blue-background[As digital data proliferates, it transforms how we interact, work, and make decisions, fundamentally altering the landscape of modern society]. This surge in data creation not only reflects the rapid technological progress but also signifies the growing reliance on digital information to shape and understand our world.",
-        "script_path": "scripts/section6.py",
-        "button_text": "Continue"
+        "title": "Quando deve ser concebida a Teoria da Mudança",
+        "question": "Qual é o momento mais adequado para conceber a Teoria da Mudança?",
+        "options": [
+            "Planeamento",
+            "Implementação",
+            "Acompanhamento",
+            "Avaliação"
+        ],
+        "answer": "Planeamento",
+        "explanations": {
+            "Planeamento": "A TdM deve ser idealmente construída durante o planeamento para garantir que a intervenção está bem fundamentada desde o início.",
+            "Implementação": "Idealmente já devia ter sido construída antes da implementação",
+            "Acompanhamento": "Esta resposta está incorreta. A TdM é mais útil se for concebida antes do acompanhamento para guiar as ações.",
+            "Avaliação": "Esta resposta está incorreta. A TdM deve estar em vigor antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
+        },
+        "button_answer": "Continuar"
     },
     {
-        "title": "Types of Data",
-        "explanations": "Digital data comes in various forms, each with unique requirements and characteristics. Text, images, audio, and video are all examples of multi-modal data, and each type demands different amounts of storage space, coding techniques, and methods for conveying sensory information. Text data is compact and uses character encoding schemes like ASCII or Unicode. Image data requires more storage and employs compression algorithms like JPEG or PNG. Audio data uses formats like MP3 and AAC for efficient coding. Video data is the most storage-intensive, combining visual and auditory information, and uses compression techniques like H.264 and H.265.",
-        "script_path": "scripts/section7.py",
-        "button_text": "Continue"
-    }      
+        "title": "Vantagens e desvantagens da Teoria da Mudança ⚖️",
+        "text": "Entre as vantagens da TdM estão a criação de um entendimento partilhado e a clareza na representação das expectativas e resultados. No entanto, pode haver desafios, como a dependência de métodos qualitativos e a simplificação da realidade.",
+        "image_path": "content/Assets/section4.png",
+        "button_text": "Continuar"
+    },
+    {
+        "title": "Síntese 👩‍🎓",
+        "text": "Nesta sessão, explorámos a Teoria da Mudança, compreendendo a sua utilidade na representação gráfica das mudanças esperadas por uma intervenção. Também vimos que a TdM é fundamental na fase de planeamento e que suporta a monitorização e avaliação de políticas públicas.",
+        "image_path": "content/Assets/endsection.png",
+        "button_text": "Concluir"
+    }
 ]

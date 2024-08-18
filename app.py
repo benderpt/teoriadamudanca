@@ -5,8 +5,8 @@ from scripts.endsection import render_end_section
 
 def run():
     st.set_page_config(
-        page_title="What is data?",
-        page_icon="content/Assets/logos/logo.png",
+        page_title="Teoria da Mudança",
+        page_icon="content/Assets/logos/icon.png",
         initial_sidebar_state="collapsed",
     )
 
