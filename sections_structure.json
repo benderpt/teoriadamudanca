@@ -17,10 +17,10 @@
         ],
         "answer": "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
         "explanations": {
-            "Uma ferramenta para medir a eficiência de um produto.": "Esta resposta está incorreta. A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças em um contexto específico.",
+            "Uma ferramenta para medir a eficiência de um produto.": "A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças em um contexto específico.",
             "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.": "A TdM é uma ferramenta que permite mapear visualmente a relação entre atividades e os resultados que se espera alcançar.",
             "Um método de previsão de resultados financeiros.": "Esta resposta está incorreta. A TdM não se foca na previsão de resultados financeiros, mas sim na explicação de mudanças em um contexto de intervenção.",
-            "Um modelo de gestão de recursos humanos.": "Esta resposta está incorreta. A TdM não é um modelo de gestão, mas sim uma ferramenta para mapear mudanças causadas por uma intervenção."
+            "Um modelo de gestão de recursos humanos.": "A TdM não é um modelo de gestão, mas sim uma ferramenta para mapear mudanças causadas por uma intervenção."
         },
         "button_answer": "Continuar"
     },
@@ -96,8 +96,8 @@
         "explanations": {
             "Planeamento": "A TdM deve ser idealmente construída durante o planeamento para garantir que a intervenção está bem fundamentada desde o início.",
             "Implementação": "Idealmente já devia ter sido construída antes da implementação",
-            "Acompanhamento": "Esta resposta está incorreta. A TdM é mais útil se for concebida antes do acompanhamento para guiar as ações.",
-            "Avaliação": "Esta resposta está incorreta. A TdM deve estar em vigor antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
+            "Acompanhamento": "A TdM é mais útil se for concebida antes do acompanhamento para guiar as ações.",
+            "Avaliação": "A TdM deve estar em vigor antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
         },
         "image_path": "content/Assets/section6.png",
         "button_answer": "Continuar"
