@@ -22,7 +22,7 @@ def render_end_section():
         """, unsafe_allow_html=True)
     
     # Botão 1: Ver guia de avaliabilidade
-    if st.button("📘 Ver guia de avaliabilidade", use_container_width=True, type="primary", help="Clique para abrir o guia da Teoria da Mudança"):
+    if st.button("📘 Ver guia da Teoria da Mudança", use_container_width=True, type="primary", help="Clique para abrir o guia da Teoria da Mudança"):
         st.markdown("[Abra o guia](https://planapp.gov.pt/wp-content/uploads/2023/09/PlanAPP_2023_GuiaTdM.pdf)")
 
     # Botão 2: Acompanhe o PlanAPP
