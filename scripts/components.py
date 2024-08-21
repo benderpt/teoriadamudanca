@@ -31,7 +31,7 @@ def render_single_choice_question(section):
         correct = selected_option in section["answer"]
         
         if correct:
-            feedback_placeholder.success(f"{selected_option}\n\n**Correto**\n\n{explanation}")
+            feedback_placeholder.success(f"{selected_option}\n\n**Correto**. {explanation}")
             st.toast("🎉 Parabéns, você acertou!", icon="🔥")
         else:
             feedback_placeholder.error(f"{selected_option}\n\n**Incorreto**. {explanation}")
@@ -87,10 +87,10 @@ def render_multiple_choice_question(section):
         for option in selected_options:
             explanation = section["explanations"].get(option, "")
             if option in section["answer"]:
-                st.success(f"{option}: {explanation}")
+                st.success(f"{option}\n\n**Correto**. {explanation}")
                 correct_count += 1  # Incrementar contador de respostas corretas
             else:
-                st.error(f"{option}: {explanation}")
+                st.error(f"{option}\n\n**Incorreto**. {explanation}")
                 incorrect_count += 1  # Incrementar contador de respostas incorretas
 
         # Fornecer feedback geral
@@ -125,7 +125,6 @@ def render_multiple_choice_question(section):
                     st.session_state.current_section -= 1
                     st.session_state.response_submitted = False
                     st.experimental_rerun()
-
 
 
 def render_question_content(section):

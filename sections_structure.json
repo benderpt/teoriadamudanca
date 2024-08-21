@@ -31,28 +31,6 @@
         "button_text": "Continuar"
     },
     {
-        "title": "O que é a teoria na teoria da mudança",
-        "question": "Na Teoria da Mudança, a palavra 'teoria' faz referência a:",
-        "options": [
-            "O conjunto de fundamentos.",
-            "Os pressupostos que determinam as atividades da intervenção.",
-            "As atividades específicas realizadas na intervenção.",
-            "A relação entre as atividades e os resultados esperados."
-        ],
-        "answer": [
-            "O conjunto de fundamentos.",
-            "Os pressupostos que determinam as atividades da intervenção."
-        ],
-        "explanations": {
-            "O conjunto de fundamentos.": "A 'teoria' na TdM refere-se aos fundamentos que sustentam as atividades da intervenção.",
-            "Os pressupostos que determinam as atividades da intervenção.": "A 'teoria' também inclui os pressupostos necessários para que as atividades levem aos resultados desejados.",
-            "As atividades específicas realizadas na intervenção.": "Embora as atividades sejam parte da TdM, a palavra 'teoria' refere-se mais aos fundamentos e pressupostos.",
-            "A relação entre as atividades e os resultados esperados.": "A relação entre atividades e resultados faz parte da TdM, mas 'teoria' refere-se aos fundamentos e pressupostos."
-        },
-        "image_path": "content/Assets/section3.png",
-        "button_answer": "Continuar"
-    },
-    {
         "title": "Para que serve a Teoria da Mudança? 🎯",
         "text": "Idealmente, uma TdM explica como se espera que certa intervenção produza uma mudança. A TdM deve descrever os mecanismos que explicam a relação causal entre cada elemento (e por que razão um é necessário para atingir o outro) e os pressupostos, que são as condições externas que se devem cumprir para que a causalidade identificada seja válida. Se não forem obtidos os resultados esperados, a TdM permite olhar para todos os passos do processo e identificar os componentes que não foram implementados como previsto ou, eventualmente, concluir que não se validaram os mecanismos e pressupostos que sustentavam a lógica de causalidade da intervenção.",
         "image_path": "content/Assets/section4.png",
