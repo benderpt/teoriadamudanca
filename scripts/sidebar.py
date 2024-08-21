@@ -41,10 +41,13 @@ def configure_sidebar():
         help="Acompanhar o PlanAPP nas redes que prefere",
         use_container_width=True
     )
-
     st.sidebar.divider()
-    # Botão para reiniciar
-    if st.sidebar.button("Voltar ao início"):
-        st.session_state.current_section = 0
-        st.rerun()
+
+    # Verifica se não está na primeira secção
+    if st.session_state.get("current_section", 0) > 0:
+        # Botão para reiniciar
+        if st.sidebar.button("Voltar ao início", use_container_width=True):
+            st.session_state.current_section = 0
+            st.rerun()
+
 

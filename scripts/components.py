@@ -29,27 +29,29 @@ def render_single_choice_question(section):
         selected_option = st.session_state.get("selected_option", "")
         explanation = section["explanations"].get(selected_option, "")
         correct = selected_option in section["answer"]
+        
         if correct:
-            feedback_placeholder.success(f"{selected_option}: Correto! {explanation}")
+            feedback_placeholder.success(f"{selected_option}\n\n**Correto**\n\n{explanation}")
             st.toast("🎉 Parabéns, você acertou!", icon="🔥")
         else:
-            feedback_placeholder.error(f"{selected_option}: Incorreto. {explanation}")
+            feedback_placeholder.error(f"{selected_option}\n\n**Incorreto**. {explanation}")
+
 
         # Adicionar colunas para botões
         col1, col2, col3 = st.columns(3)
         with col1:
-            if st.button(section.get("button_answer", "Continuar"), type="primary"):
+            if st.button(section.get("button_answer", "Continuar"), type="primary", use_container_width=True):
                 st.session_state.current_section += 1
                 st.session_state.response_submitted = False
                 st.experimental_rerun()
         if not correct:
             with col2:
-                if st.button("Tentar novamente"):
+                if st.button("Tentar novamente", use_container_width=True):
                     st.session_state.response_submitted = False
                     st.experimental_rerun()  # Atualizar a página
         if st.session_state.current_section > 0:
             with col3:
-                if st.button("Voltar"):
+                if st.button("Voltar atrás", use_container_width=True):
                     st.session_state.current_section -= 1
                     st.session_state.response_submitted = False
                     st.experimental_rerun()
@@ -108,18 +110,18 @@ def render_multiple_choice_question(section):
         # Adicionar colunas para botões
         col1, col2, col3 = st.columns(3)
         with col1:
-            if st.button(section.get("button_answer", "Continuar"), type="primary"):
+            if st.button(section.get("button_answer", "Continuar"), type="primary", use_container_width=True):
                 st.session_state.current_section += 1
                 st.session_state.response_submitted = False
                 st.experimental_rerun()
         if not all_correct:
             with col2:
-                if st.button("Tentar novamente"):
+                if st.button("Tentar novamente", use_container_width=True):
                     st.session_state.response_submitted = False
                     st.experimental_rerun()  # Atualizar a página
         if st.session_state.current_section > 0:
             with col3:
-                if st.button("Voltar"):
+                if st.button("Voltar atrás", use_container_width=True):
                     st.session_state.current_section -= 1
                     st.session_state.response_submitted = False
                     st.experimental_rerun()
@@ -186,17 +188,18 @@ def render_navigation_buttons(section):
     if "button_text" in section:
         if st.session_state.current_section > 0:
             st.subheader('', divider='rainbow')
-            col1, col2 = st.columns(2)
+            col1, col2, col3 = st.columns(3)
             with col1:
-                if st.button(section["button_text"], type="primary"):
+                if st.button(section["button_text"], type="primary", use_container_width=True):
                     st.session_state.current_section += 1
                     st.rerun()
-            with col2:
-                if st.button("voltar"):
+            col2 = st.empty()
+            with col3:
+                if st.button("Voltar atrás", use_container_width=True):
                     st.session_state.current_section -= 1
                     st.rerun()
         else:
-            if st.button(section["button_text"], type="primary"):
+            if st.button(section["button_text"], type="primary", use_container_width=True):
                 st.session_state.current_section += 1
                 st.rerun()
 
