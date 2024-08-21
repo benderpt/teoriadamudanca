@@ -22,14 +22,23 @@ def render_end_section():
         """, unsafe_allow_html=True)
     
     # Botão 1: Ver guia de avaliabilidade
-    if st.button("📘 Ver guia da Teoria da Mudança", use_container_width=True, type="primary", help="Clique para abrir o guia da Teoria da Mudança"):
-        st.markdown("[Abra o guia](https://planapp.gov.pt/wp-content/uploads/2023/09/PlanAPP_2023_GuiaTdM.pdf)")
+    st.link_button(
+        label="📘 Ver guia da Teoria da Mudança",
+        url="https://planapp.gov.pt/wp-content/uploads/2023/09/PlanAPP_2023_GuiaTdM.pdf",
+        type="primary",
+        help="Clique para abrir o guia Teoria da Mudança",
+        use_container_width=True
+    )
 
     # Botão 2: Acompanhe o PlanAPP
-    if st.button("🫶 Acompanhe o PlanAPP", use_container_width=True, type="primary", help="Acompanhar o PlanAPP nas redes que prefere"):
-        st.markdown("[Siga o PlanAPP](https://linktr.ee/planapp)")
-    
-    st.markdown("---")
+    st.link_button(
+        label="🫶 Acompanhe o PlanAPP",
+        url="https://linktr.ee/planapp",
+        type="primary",
+        help="Acompanhar o PlanAPP nas redes que prefere",
+        use_container_width=True
+    )
+    st.divider()
 
     # Restart button
     if st.button("Reiniciar", key="end_restart"):

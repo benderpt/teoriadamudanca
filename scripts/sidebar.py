@@ -26,10 +26,10 @@ def configure_sidebar():
 
     # Botão 1: Ver guia de avaliabilidade
     st.sidebar.link_button(
-        label="📘 Ver guia de avaliabilidade",
+        label="📘 Ver guia da Teoria da Mudança",
         url="https://planapp.gov.pt/wp-content/uploads/2023/09/PlanAPP_2023_GuiaTdM.pdf",
         type="primary",
-        help="Clique para abrir o guia de avaliabilidade",
+        help="Clique para abrir o guia da Teoria da Mudança",
         use_container_width=True
     )
 
