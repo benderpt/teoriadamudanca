@@ -11,11 +11,11 @@
         "question": "Em primeiro lugar, é preciso responder a esta pergunta: **O que é a Teoria da Mudança (TdM)?**",
         "options": [
             "Uma ferramenta para medir a eficiência de um produto.",
-            "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
+            "Uma abordagem para representar narrativa e graficamente mudanças causadas por uma intervenção.",
             "Um método de previsão de resultados financeiros.",
             "Um modelo de gestão de recursos humanos."
         ],
-        "answer": "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
+        "answer": "Uma abordagem para representar narrativa e graficamente mudanças causadas por uma intervenção.",
         "explanations": {
             "Uma ferramenta para medir a eficiência de um produto.": "A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças em um contexto específico.",
             "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.": "A TdM é uma ferramenta que permite mapear visualmente a relação entre atividades e os resultados que se espera alcançar.",
