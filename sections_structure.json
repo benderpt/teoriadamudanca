@@ -11,52 +11,50 @@
         "question": "Em primeiro lugar, é preciso responder a esta pergunta: **O que é a Teoria da Mudança (TdM)?**",
         "options": [
             "Uma ferramenta para medir a eficiência de um produto.",
-            "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
+            "Uma ferramenta que permite representar, de uma forma abrangente e gráfica, a forma como se espera que uma intervenção de política pública atinja os seus objetivos, ou seja, produza mudanças desejáveis.",
             "Um método de previsão de resultados financeiros.",
             "Um modelo de gestão de recursos humanos."
         ],
-        "answer": "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.",
+        "answer": "Uma ferramenta que permite representar, de uma forma abrangente e gráfica, a forma como se espera que uma intervenção de política pública atinja os seus objetivos, ou seja, produza mudanças desejáveis.",
         "explanations": {
             "Uma ferramenta para medir a eficiência de um produto.": "A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças em um contexto específico.",
-            "Uma abordagem para representar graficamente mudanças causadas por uma intervenção.": "A TdM é uma ferramenta que permite mapear visualmente a relação entre atividades e os resultados que se espera alcançar.",
+            "Uma ferramenta que permite representar, de uma forma abrangente e gráfica, a forma como se espera que uma intervenção de política pública atinja os seus objetivos, ou seja, produza mudanças desejáveis.": "A TdM implica identificar a cadeia de resultados da intervenção, bem como explicar em que condições esses resultados podem ocorrer.",
             "Um método de previsão de resultados financeiros.": "A TdM não se foca na previsão de resultados financeiros, mas sim na explicação de mudanças em um contexto de intervenção.",
-            "Um modelo de gestão de recursos humanos.": "A TdM não é um modelo de gestão, mas sim uma ferramenta para mapear mudanças causadas por uma intervenção."
+            "Um modelo de gestão de recursos humanos.": "A TdM não é um modelo de gestão de recursos humanos, mas sim uma ferramenta para representar a forma como se espera que a intervenção produza mudanças."
         },
         "button_answer": "Continuar"
     },
     {
         "title": "Elementos-chave da Teoria da Mudança 🔑",
-        "text": "A Teoria da Mudança é uma ferramenta que permite representar, de uma forma abrangente e gráfica, a complexidade e o “como” (a causalidade) das mudanças provocadas por uma determinada intervenção, em circunstâncias específicas. Uma TdM apresenta os “pequenos passos” que ocorrem entre o conjunto de atividades realizadas no âmbito de uma intervenção e os resultados esperados. Na Teoria da Mudança, a palavra “teoria” faz referência ao conjunto de fundamentos e pressupostos que determinam as atividades da intervenção.",
+        "text": "A TdM é uma ferramenta que permite representar, de uma forma abrangente e gráfica, a complexidade e o 'como' (a causalidade) das mudanças provocadas por uma determinada intervenção, em circunstâncias específicas. Uma TdM apresenta os 'pequenos passos' que ocorrem entre o conjunto de atividades realizadas no âmbito de uma intervenção e os resultados esperados. Na Teoria da Mudança, a palavra 'teoria' faz referência ao conjunto de fundamentos e pressupostos que determinam as atividades da intervenção.",
         "image_path": "content/Assets/section2.png",
         "button_text": "Continuar"
     },
     {
         "title": "Para que serve a Teoria da Mudança? 🎯",
-        "text": "Idealmente, uma Teoria da Mudança explica como se espera que certa intervenção produza uma mudança. A TdM deve descrever os mecanismos que explicam a relação causal entre cada elemento (e por que razão um é necessário para atingir o outro) e os pressupostos, que são as condições externas que se devem cumprir para que a causalidade identificada seja válida. Se não forem obtidos os resultados esperados, a Teoria da Mudança permite olhar para todos os passos do processo e identificar os componentes que não foram implementados como previsto ou, eventualmente, concluir que não se validaram os mecanismos e pressupostos que sustentavam a lógica de causalidade da intervenção.",
+        "text": "Idealmente, uma TdM explica como se espera que certa intervenção produza uma mudança. A TdM deve descrever os mecanismos que explicam a relação causal entre cada elemento (ex: motivações, convicções, desejos, oportunidades) e os pressupostos, que são as condições ou acontecimentos necessários para que o nexo causal ocorra. Se não forem obtidos os resultados esperados, a TdM permite olhar para todos os passos do processo e identificar os componentes que não foram implementados como previsto ou, eventualmente, concluir que não se validaram os mecanismos e pressupostos que sustentavam a lógica de causalidade da intervenção.",
         "image_path": "content/Assets/section4.png",
         "button_text": "Continuar"
     },
     {
-        "title": "A quem pode servir a teoria da mudança",
-        "question_multiple": "Esta metodologia analítica pode servir a quem no ciclo de políticas públicas?",
+        "title": "A quem pode servir a Teoria da Mudança",
+        "question_multiple": "Esta metodologia analítica pode ser mais útil em que fase do ciclo de políticas públicas?",
         "options": [
-            "A quem formula e desenha políticas",
-            "Aos responsáveis de monitorização das políticas",
-            "A quem discute o agendamento das políticas",
-            "A quem avalia as políticas",
-            "A quem as políticas são dirigidas"
+            "Na formulação e desenho das políticas",
+            "Na monitorização das políticas",
+            "No agendamento das políticas",
+            "Na avaliação das políticas"
         ],
         "answer": [
-            "A quem formula e desenha políticas",
-            "Aos responsáveis de monitorização das políticas",
-            "A quem avalia as políticas"
+            "Na formulação e desenho das políticas",
+            "Na monitorização das políticas",
+            "Na avaliação das políticas"
         ],
         "explanations": {
-            "A quem formula e desenha políticas": "A Teoria da Mudança pode apoiar aqueles que estão envolvidos na formulação e desenho de políticas públicas.",
-            "Aos responsáveis de monitorização das políticas": "A Teoria da Mudança é útil para monitorar a implementação e o impacto das políticas.",
-            "A quem avalia as políticas": "Esta ferramenta é especialmente útil para aqueles que avaliam a eficácia e o impacto das políticas.",
-            "A quem as políticas são dirigidas": "Embora a TDM possa estar disponível para os beneficiários como medida de transparência, por ser um instrumento técnico não serve um grande propósito para quem a política é dirigida.",
-            "A quem discute o agendamento das políticas": "Na fase de agendamento de políticas, em princípio, a Teoria da Mudança ainda não se encontra desenvolvida."
+            "Na formulação e desenho das políticas": "A TdM pode apoiar os decisores políticos na tomada de decisão porque permite explicar, de forma clara e sustentada, como e porquê a intervenção deve produzir os resultados esperados.",
+            "Na monitorização das políticas": "A TdM é útil para a fase de monitorização porque, além de contribuir para a definição de indicadores, permite confrontar em tempo real o que foi planeado com o que está a acontecer e, assim, identificar desvios, problemas e fazer as correções necessárias.",
+            "No agendamento das políticas": "Na fase de agendamento de políticas, em princípio, a Teoria da Mudança ainda não se encontra desenvolvida.",
+            "Na avaliação das políticas": "A TdM é útil na fase de avaliação para validar a lógica da intervenção e fazer ajustamentos com base em novas evidências. Também facilita a comparação entre os resultados alcançados e os resultados esperados."
         },
         "image_path": "content/Assets/section5.png",
         "button_answer": "Continuar"
@@ -74,22 +72,22 @@
         "explanations": {
             "Planeamento": "A TdM deve ser idealmente construída durante o planeamento para garantir que a intervenção está bem fundamentada desde o início.",
             "Implementação": "Idealmente, já devia ter sido construída antes da implementação.",
-            "Acompanhamento": "A TdM é mais útil se for concebida antes do acompanhamento para guiar as ações.",
-            "Avaliação": "A TdM deve estar em vigor antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
+            "Acompanhamento": "A TdM é mais útil se for concebida antes do acompanhamento para guiar implementação.",
+            "Avaliação": "A TdM deve estar explícita antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
         },
         "image_path": "content/Assets/section6.png",
         "button_answer": "Continuar"
     },
     {
         "title": "Quando deve ser concebida a Teoria da Mudança",
-        "question": "Se uma intervenção já está em curso, mas não conta com uma Teoria da Mudança, continua a ser útil a sua construção?",
+        "question": "Se uma intervenção já está em curso, mas não conta com uma Teoria da Mudança (TdM), continua a ser útil a sua construção?",
         "options": [
             "Sim",
             "Não"
         ],
         "answer": "Sim",
         "explanations": {
-            "Sim": "continua a ser útil pelos seguintes motivos:\n\n1. Permite concluir se é expectável que as atividades em curso contribuam para a obtenção dos resultados propostos;\n2. Facilita os processos de avaliação, contribuindo para clarificar a lógica da intervenção (na qual se centrará a avaliação) e definir indicadores-chave;\n3. Permite um espaço de troca de ideias entre os stakeholders, assegurando que há um entendimento partilhado relativamente ao objetivo e à lógica da intervenção.",
+            "Sim": "Continua a ser útil pelos seguintes motivos:\n\n1. Permite concluir se é expectável que as atividades em curso contribuam para a obtenção dos resultados propostos;\n2. Facilita os processos de avaliação, contribuindo para clarificar a lógica da intervenção e definir indicadores-chave;\n3. Permite um espaço de troca de ideias entre os stakeholders, assegurando que há um entendimento partilhado relativamente ao objetivo e à lógica da intervenção.",
             "Não": "Idealmente, já devia ter sido construída antes da implementação, mas ainda pode ser útil em fases posteriores para realinhar a lógica da intervenção."
         },
         "image_path": "content/Assets/section6.png",
@@ -97,13 +95,13 @@
     },
     {
         "title": "Vantagens e desvantagens da Teoria da Mudança ⚖️",
-        "text": "**Vantagens:**\n\n:green-background[Gerar um entendimento partilhado sobre a intervenção]\n\n:green-background[Permitir explicitar, de modo graficamente claro e intuitivo, a cadeia de acontecimentos e resultados que é esperada]\n\n:green-background[Compreensão rápida da lógica da intervenção]\n\n:green-background[Servir de base para a construção de um sistema de monitorização]\n\n:green-background[Servir para identificar elementos da intervenção sobre os quais há um maior desconhecimento prévio]\n\n**Desvantagens:**\n\n:red-background[Dependência de métodos qualitativos]\n\n:red-background[Simplificação da realidade]\n\n:red-background[Pode existir pouca disponibilidade para participar]\n\n:red-background[Não visar uma estimativa quantificada do impacto ou do custo-eficácia da intervenção.]",
+        "text": "**Vantagens:**\n\n:green-background[Gerar um entendimento partilhado sobre a intervenção]\n\n:green-background[Permitir explicitar, de modo graficamente claro e intuitivo, a cadeia de acontecimentos e resultados que é esperada]\n\n:green-background[Compreensão rápida da lógica da intervenção]\n\n:green-background[Servir de base para a construção de um sistema de monitorização]\n\n:green-background[Servir para identificar elementos da intervenção sobre os quais há um maior desconhecimento prévio]\n\n**Desvantagens:**\n\n:red-background[Dependência de métodos qualitativos]\n\n:red-background[Simplificação da realidade]\n\n:red-background[Pode existir pouca disponibilidade para participar]",
         "image_path": "content/Assets/section7.png",
         "button_text": "Continuar"
     },
     {
         "title": "Síntese 👩‍🎓",
-        "text": ":green-background[Nesta sessão de microlearning  abordou-se a ferramenta metodológica da Teoria da Mudança (TdM), que permite representar graficamente a complexidade das mudanças resultantes de uma intervenção em contextos específicos.]\n\n:green-background[A TdM ajuda a entender a relação causal entre as atividades realizadas e os resultados esperados, utilizando fundamentos e pressupostos claros.]\n\n:blue-background[A metodologia é útil para a formulação, monitorização e avaliação de políticas públicas, e deve ser idealmente desenvolvida na fase de planeamento da intervenção.]\n\n:blue-background[Entre as vantagens desta ferramenta, destacam-se a criação de um entendimento partilhado e a clareza na representação das expectativas e resultados.]",
+        "text": "Nesta sessão de microlearning abordou-se a ferramenta metodológica da Teoria da Mudança (TdM), que permite representar a complexidade das mudanças resultantes de uma intervenção em contextos específicos.\n\n:A TdM ajuda a entender a relação causal entre as atividades realizadas e os resultados esperados, utilizando fundamentos e pressupostos claros.\n\n:A metodologia é útil para a formulação, monitorização e avaliação de políticas públicas, e deve ser idealmente desenvolvida na fase de planeamento da intervenção.\n\n:Entre as vantagens desta ferramenta, destacam-se a criação de um entendimento partilhado e a clareza na representação das expectativas e resultados.",
         "image_path": "content/Assets/endsection.png",
         "button_text": "Concluir"
     }

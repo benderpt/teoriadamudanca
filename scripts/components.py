@@ -31,10 +31,10 @@ def render_single_choice_question(section):
         correct = selected_option in section["answer"]
         
         if correct:
-            feedback_placeholder.success(f"{selected_option}\n\n**Correto**. {explanation}")
+            feedback_placeholder.success(f"Escolha: **{selected_option}**\n\n**Correto**. {explanation}")
             st.toast("🎉 Parabéns, você acertou!", icon="🔥")
         else:
-            feedback_placeholder.error(f"{selected_option}\n\n**Incorreto**. {explanation}")
+            feedback_placeholder.error(f"Escolha: **{selected_option}**\n\n**Incorreto**. {explanation}")
 
 
         # Adicionar colunas para botões
@@ -87,10 +87,10 @@ def render_multiple_choice_question(section):
         for option in selected_options:
             explanation = section["explanations"].get(option, "")
             if option in section["answer"]:
-                st.success(f"{option}\n\n**Correto**. {explanation}")
+                st.success(f"**{option}**\n\n**Correto**. {explanation}")
                 correct_count += 1  # Incrementar contador de respostas corretas
             else:
-                st.error(f"{option}\n\n**Incorreto**. {explanation}")
+                st.error(f"**{option}**\n\n**Incorreto**. {explanation}")
                 incorrect_count += 1  # Incrementar contador de respostas incorretas
 
         # Fornecer feedback geral
