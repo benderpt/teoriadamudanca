@@ -17,7 +17,7 @@
         ],
         "answer": "Uma ferramenta que permite representar, de uma forma abrangente e gráfica, a forma como se espera que uma intervenção de política pública atinja os seus objetivos, ou seja, produza mudanças desejáveis.",
         "explanations": {
-            "Uma ferramenta para medir a eficiência de um produto.": "A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças em um contexto específico.",
+            "Uma ferramenta para medir a eficiência de um produto.": "A TdM não é utilizada para medir a eficiência de produtos, mas sim para entender como uma intervenção causa mudanças num contexto específico.",
             "Uma ferramenta que permite representar, de uma forma abrangente e gráfica, a forma como se espera que uma intervenção de política pública atinja os seus objetivos, ou seja, produza mudanças desejáveis.": "A TdM implica identificar a cadeia de resultados da intervenção, bem como explicar em que condições esses resultados podem ocorrer.",
             "Um método de previsão de resultados financeiros.": "A TdM não se foca na previsão de resultados financeiros, mas sim na explicação de mudanças em um contexto de intervenção.",
             "Um modelo de gestão de recursos humanos.": "A TdM não é um modelo de gestão de recursos humanos, mas sim uma ferramenta para representar a forma como se espera que a intervenção produza mudanças."
@@ -51,7 +51,7 @@
             "Na avaliação das políticas"
         ],
         "explanations": {
-            "Na formulação e desenho das políticas": "A TdM pode apoiar os decisores políticos na tomada de decisão porque permite explicar, de forma clara e sustentada, como e porquê a intervenção deve produzir os resultados esperados.",
+            "Na formulação e desenho das políticas": "A TdM pode apoiar os decisores políticos na tomada de decisão porque permite explicar, de forma clara e sustentada, como e por que razão a intervenção deve produzir os resultados esperados. Desta forma, contribui para decisões mais fundamentadas e para políticas mais eficazes.",
             "Na monitorização das políticas": "A TdM é útil para a fase de monitorização porque, além de contribuir para a definição de indicadores, permite confrontar em tempo real o que foi planeado com o que está a acontecer e, assim, identificar desvios, problemas e fazer as correções necessárias.",
             "No agendamento das políticas": "Na fase de agendamento de políticas, em princípio, a Teoria da Mudança ainda não se encontra desenvolvida.",
             "Na avaliação das políticas": "A TdM é útil na fase de avaliação para validar a lógica da intervenção e fazer ajustamentos com base em novas evidências. Também facilita a comparação entre os resultados alcançados e os resultados esperados."
@@ -72,7 +72,7 @@
         "explanations": {
             "Planeamento": "A TdM deve ser idealmente construída durante o planeamento para garantir que a intervenção está bem fundamentada desde o início.",
             "Implementação": "Idealmente, já devia ter sido construída antes da implementação.",
-            "Acompanhamento": "A TdM é mais útil se for concebida antes do acompanhamento para guiar implementação.",
+            "Acompanhamento": "A TdM é mais útil se for concebida antes do acompanhamento para guiar a implementação.",
             "Avaliação": "A TdM deve estar explícita antes da avaliação para que a intervenção possa ser analisada de acordo com as premissas estabelecidas."
         },
         "image_path": "content/Assets/section6.png",
@@ -95,14 +95,14 @@
     },
     {
         "title": "Vantagens e desvantagens da Teoria da Mudança ⚖️",
-        "text": "**Vantagens:**\n\n:green-background[Gerar um entendimento partilhado sobre a intervenção]\n\n:green-background[Permitir explicitar, de modo graficamente claro e intuitivo, a cadeia de acontecimentos e resultados que é esperada]\n\n:green-background[Compreensão rápida da lógica da intervenção]\n\n:green-background[Servir de base para a construção de um sistema de monitorização]\n\n:green-background[Servir para identificar elementos da intervenção sobre os quais há um maior desconhecimento prévio]\n\n**Desvantagens:**\n\n:red-background[Dependência de métodos qualitativos]\n\n:red-background[Simplificação da realidade]\n\n:red-background[Pode existir pouca disponibilidade para participar]",
+        "text": "**Vantagens:**\n\n:green-background[Gerar um entendimento partilhado sobre a intervenção]\n\n:green-background[Permitir explicitar, de modo graficamente claro e intuitivo, a cadeia de acontecimentos e resultados esperados]\n\n:green-background[Compreensão rápida da lógica da intervenção]\n\n:green-background[Servir de base para a construção de um sistema de monitorização]\n\n:green-background[Servir para identificar elementos da intervenção sobre os quais há um maior desconhecimento prévio]\n\n**Desvantagens:**\n\n:red-background[Dependência de métodos qualitativos]\n\n:red-background[Risco de simplificação da realidade]\n\n:red-background[Pode existir pouca disponibilidade para participar]",
         "image_path": "content/Assets/section7.png",
         "button_text": "Continuar"
     },
     {
         "title": "Síntese 👩‍🎓",
-        "text": "Nesta sessão de microlearning abordou-se a ferramenta metodológica da Teoria da Mudança (TdM), que permite representar a complexidade das mudanças resultantes de uma intervenção em contextos específicos.\n\n:A TdM ajuda a entender a relação causal entre as atividades realizadas e os resultados esperados, utilizando fundamentos e pressupostos claros.\n\n:A metodologia é útil para a formulação, monitorização e avaliação de políticas públicas, e deve ser idealmente desenvolvida na fase de planeamento da intervenção.\n\n:Entre as vantagens desta ferramenta, destacam-se a criação de um entendimento partilhado e a clareza na representação das expectativas e resultados.",
+        "text": "Nesta sessão de microlearning abordou-se a ferramenta metodológica da Teoria da Mudança (TdM), que :blue-background[permite representar a complexidade das mudanças resultantes de uma intervenção em contextos específicos].\n\nA TdM ajuda a entender a :blue-background[relação causal entre as atividades realizadas e os resultados esperados].\n\n:blue-background[Formulação, monitorização e avaliação de políticas públicas são fases onde a metodologia se revela útil], e deve ser, idealmente, :blue-background[desenvolvida na fase de planeamento da intervenção].\n\nEntre as vantagens desta ferramenta, destacam-se a :blue-background[criação de um entendimento partilhado] e a :blue-background[clareza na representação das expectativas e resultados].",
         "image_path": "content/Assets/endsection.png",
         "button_text": "Concluir"
-    }
+    }     
 ]
